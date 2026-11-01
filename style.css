@@ -1,0 +1,198 @@
+/* ========== GENERAL PAGE STYLING ========== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  background-color: #f2f6f8;
+  color: #222222;
+}
+
+h2 {
+  color: #12263a;
+}
+
+
+/* ========== HEADER ========== */
+
+#top-bar {
+  background-color: #12263a;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#top-bar img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.site-name {
+  margin: 0;
+  font-size: 24px;
+}
+
+
+/* ========== NAVIGATION BAR ========== */
+
+nav {
+  background-color: #1f6f5c;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+nav a:hover {
+  background-color: #12263a;
+}
+
+
+/* ========== SECTIONS ========== */
+
+.section {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+
+/* ========== SERVICE CARDS ========== */
+
+.service-card {
+  display: flex;
+  gap: 20px;
+}
+
+/* Individual service cards */
+
+.service-card > .service-card {
+  flex: 1;
+  display: block;
+  background-color: white;
+  border: 2px solid #1f6f5c;
+  border-radius: 8px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.service-card > .service-card:hover {
+  background-color: #e3f1ed;
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: #12263a;
+}
+
+
+/* ========== BUTTONS ========== */
+
+.button, button {
+  display: inline-block;
+  background-color: #f2b134;
+  color: #12263a;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover, button:hover {
+  background-color: #1f6f5c;
+  color: white;
+}
+
+
+/* ========== LOGIN FORM ========== */
+
+form {
+  background-color: white;
+  border: 1px solid #aaaaaa;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 450px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #1f6f5c;
+}
+
+
+/* ========== FOOTER ========== */
+
+#contact {
+  background-color: #12263a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#contact p {
+  margin: 5px;
+}
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+@media (max-width: 700px) {
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  .service-card {
+    flex-direction: column;
+  }
+
+  #top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+}
